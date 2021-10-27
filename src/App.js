@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import DocumentationView from "./views/DocumentationView";
 import TimersView from "./views/TimersView";
+import NavContainer from "./components/generic/NavContainer";
 
 const Container = styled.div`
   background: #f0f6fb;
@@ -15,16 +16,19 @@ function App() {
   return (
     <Container>
       <Router>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Timers</Link>
-            </li>
-            <li>
-              <Link to="/docs">Documentation</Link>
-            </li>
-          </ul>
-        </nav>
+        <NavContainer>
+          <nav>
+            <ul>
+              <li>Aali2537 Assignment 1</li>
+              <li>
+                <Link to="/">Timers</Link>
+              </li>
+              <li>
+                <Link to="/docs">Documentation</Link>
+              </li>
+            </ul>
+          </nav>
+        </NavContainer>
         <Switch>
           <Route path="/docs">
             <DocumentationView />
