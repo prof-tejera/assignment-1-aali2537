@@ -27,16 +27,16 @@ const TimerTitle = styled.div``;
 
 function App() {
   const timers = [
-    { title: "Stopwatch", C: <Stopwatch /> },
-    { title: "Countdown", C: <Countdown /> },
-    { title: "XY", C: <XY /> },
-    { title: "Tabata", C: <Tabata /> },
+    { title: "Stopwatch", C: <Stopwatch size={400} strokeWidth={15} /> },
+    { title: "Countdown", C: <Countdown size={400} strokeWidth={15} /> },
+    { title: "XY", C: <XY size={400} strokeWidth={15} /> },
+    { title: "Tabata", C: <Tabata size={400} strokeWidth={15} /> },
   ];
 
   return (
     <Timers>
-      {timers.map((timer) => (
-        <Timer>
+      {timers.map((timer, index) => (
+        <Timer key={index}>
           <TimerTitle>{timer.title}</TimerTitle>
           {timer.C}
         </Timer>

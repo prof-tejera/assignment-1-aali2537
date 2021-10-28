@@ -1,9 +1,9 @@
-import React from "react";
 import styled from "styled-components";
 
 const NavContainer = styled.div`
   background-color: #186bf2;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.23);
+  margin-bottom: 3%;
 
   ul {
     margin-top: 0;
