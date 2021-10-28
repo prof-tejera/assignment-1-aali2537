@@ -5,6 +5,8 @@ For assignment 1 I have my ui mostly complete except for missing settings page d
 
 I had a question on the design of my components and I'm not really happy the way my timer classes turned out. As mentioned before I used an svg element to draw the circular progress bar, however to get the timer inside of the svg element I ended up using svg text. Since to my knowledge I had to keep the elements in the same parent/child level I ended up bundling alot more components then I wished for inside of my circle component. It does conditionally render alot of elements out by taking account which props are being passed in and determining for example if a countdown timer is being used so no round text will be shown. I tried to restructure this by separating out my two svg circle elements however one of them is an extended style component of the other with template literals inside that broke when I tried to separate them into different files. I did find a solution to separate them by not using the extended style components but at that point I was repeating alot of the same code between them which I felt was violating the DRY policy. Any feedback specifically on the circle component class design and what I should've done would be greatly appreciated.
 
+Url: https://prof-tejera.github.io/assignment-1-aali2537/
+
 ## Objective
 
 For Assignment 1 (A1) we are going to be building a component libary that we can use for future assignments. Our main goal is to layout the components that will be composed together to create our final bigger components. We will focus on composition, component interfaces, and styling. We aren't going to focus on functionality quite yet and at first our components will be very static.
