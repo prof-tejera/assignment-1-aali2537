@@ -145,11 +145,11 @@ class Documentation extends React.Component {
             component={<Panel>Panel Content</Panel>}
             propDocs={[
               {
-                prop: "type",
+                prop: "N/A",
                 description:
-                  "Changes button between the primary color scheme or secondary color depending on value",
-                type: "string",
-                defaultValue: "Primary",
+                  "A styled div that creates an elevated panel look and takes no props.",
+                type: "N/A",
+                defaultValue: "N/A",
               },
             ]}
           />
